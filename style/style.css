@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root{
+    --color-primary: #c3c03b;
+    --color-text: #ffffff;
+    --color-main-bg: #252631;
+    --color-text-grey: #c3c3c3;
+    --color-card-bg: #1f1e24;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    background: var(--color-main-bg);
+    color: var(--color-text);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2 {
+    font-weight: 500;
+}
+
+.container {
+    max-width: 140rem;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+
+/* NAVBAR */
+
+nav {
+    height: 7rem;
+    
+}
+
+nav .flex {
+    justify-content: space-between;
+}
