@@ -5,9 +5,12 @@
     --color-text-light: #fcfcfc;
     --color-text-dark: #333;
     --color-text-grey: #c3c3c3;
-    --color-main-bg: #252631;
+    /* --color-main-bg: #252631; */
+    --color-main-bg: #15190a;
     --color-card-bg: #1f1e24;
 }
+
+/* ---- GENERAL ---- */
 
 * {
     margin: 0;
@@ -39,6 +42,8 @@ h1,
 h2 {
     font-weight: 500;
 }
+
+/* ---- UTILITY CLASSES ---- */
 
 .container {
     max-width: 140rem;
@@ -81,7 +86,7 @@ h2 {
     color: #fff;
 }
 
-/* NAVBAR */
+/* ---- NAVBAR ---- */
 
 nav {
     height: 7rem;
@@ -108,4 +113,75 @@ nav ul li a {
 nav ul li a:hover {
     color: var(--color-primary);
     transition: all 0.3s;
+}
+
+nav .menu-icon {
+    position: absolute;
+}
+
+/* ---- HERO ---- */
+
+.hero {
+    height: calc(100vh-7rem);
+    background: linear-gradient(to right, #000, transparent) url(images/hero-wallpaper.jpg);
+}
+
+.hero .flex {
+    justify-content: flex-start;
+}
+
+.hero-left {
+    margin-top: 5rem;
+    width: 55rem;
+}
+
+.hero-left .movie-logo {
+    width: 38rem;
+}
+
+.movie-overview {
+    padding: 2rem 0;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: var(--color-text-grey);
+}
+
+.movie-overview a {
+    display: inline-block;
+    color: var(--color-primary);
+    margin-top: 1.2rem;
+}
+
+.movie-meta {
+    margin: 1rem 0;
+}
+
+.movie-meta i {
+    margin-right: .2rem;
+}
+
+.movie-meta p {
+    display: inline;
+    font-size: 1.4rem;
+    margin: 0 .5rem;
+}
+
+.movie-meta #pg {
+    font-size: 1.6rem;
+    background: var(--color-text-light);
+    color: var(--color-text-dark);
+    padding: .5rem .3rem;
+}
+
+.movie-meta #vidQuality {
+    padding: .5rem;
+    border: 1px solid var(--color-text-light);
+}
+
+.movie-watch {
+    margin: 3rem 0;
+}
+
+.movie-watch i {
+    margin-right: 1rem;
 }
