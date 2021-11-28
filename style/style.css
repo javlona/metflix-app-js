@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 :root {
-    --color-primary: #d4ff58;
+    --color-primary: #0A8C5D;
     --color-text-light: #fcfcfc;
     --color-text-dark: #333;
     --color-text-grey: #c3c3c3;
@@ -44,6 +44,15 @@ h2 {
     font-weight: 500;
 }
 
+::placeholder {
+    color: var(--color-text-grey);
+    text-transform:capitalize;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
 /* ---- UTILITY CLASSES ---- */
 
 .container {
@@ -71,7 +80,7 @@ h2 {
 .btn {
     padding: 1rem 2rem;
     background: var(--color-primary);
-    color: var(--color-text-dark);
+    color: var(--color-text-light);
     border: 2px solid var(--color-primary);
     display: inline-block;
     transition: all 0.3s;
@@ -96,6 +105,8 @@ header {
                 url('/images/hero-wallpaper.jpg') no-repeat 35vh 0 /cover;
     
     z-index: 10;
+    display: flex;
+    flex-direction: column;
 }
 
 /* ---- NAVBAR ---- */
@@ -140,18 +151,43 @@ nav ul li a:hover {
     transition: all 0.3s;
 }
 
+.search-bar {
+    position: relative;
+}
+
+.search-bar input{
+    width: 20rem;
+    background: transparent;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    color: var(--color-text-light);
+    border: none;
+    border-bottom: 1px solid var(--color-primary);
+}
+
+.search-bar i {
+    font-size: 1.8rem;
+    position: absolute;
+    top: 1rem;
+}
+
+
 nav .menu-icon {
     position: absolute;
 }
 
 /* ---- HERO ---- */
 
+.hero {
+    height: 100%;
+}
+
 .hero .flex {
     justify-content: flex-start;
 }
 
 .hero-left {
-    margin-top: 5rem;
+    margin-top: 2rem;
     width: 55rem;
 }
 
@@ -205,3 +241,5 @@ nav .menu-icon {
 .movie-watch i {
     margin-right: 1rem;
 }
+
+
