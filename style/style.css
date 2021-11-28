@@ -27,6 +27,7 @@ html {
 body {
     background: var(--color-main-bg);
     color: var(--color-text-light);
+    font-family: 'Ubuntu', sans-serif;
 }
 
 a {
@@ -107,6 +108,19 @@ nav {
 nav .flex {
     justify-content: space-between;
     gap: 2rem;
+}
+
+nav .logo img {
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+nav .logo a {
+    display: inline-flex;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-primary);
 }
 
 nav ul.flex {
